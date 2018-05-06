@@ -1,0 +1,44 @@
+﻿  Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+  Copyright (C) Microsoft Corporation. All rights reserved.
+  
+  Build started 2018-05-04 9:46:59 PM.
+  Project "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\layer_Factory.vcxproj" on node 1 (default targets).
+  PrepareForBuild:
+    Creating directory "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\".
+    Creating directory "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\layer_factory.tlog\".
+  InitializeBuildStatus:
+    Creating "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\layer_factory.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  ClCompile:
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /IG:\VulkanSDK\1.1.70.1\LayerFactory\Project\ /I../Include /I../LayerFactory /I../LayerFactory/Include /Zi /nologo /W3 /WX- /diagnostics:classic /Od /Oy- /D VK_USE_PLATFORM_WIN32_KHR /D VK_PROTOTYPES /D "API_NAME=\"Vulkan\"" /D WIN32_LEAN_AND_MEAN /D _CRT_SECURE_NO_WARNINGS /D _USE_MATH_DEFINES /D WIN32 /D _DEBUG /D _WINDOWS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\\" /Fd"G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\layer_factory.pdb" /Gd /TP /analyze- /FC /errorReport:queue vk_format_utils.cpp vk_layer_config.cpp vk_layer_extension_utils.cpp vk_layer_table.cpp vk_layer_utils.cpp
+    vk_format_utils.cpp
+    vk_layer_config.cpp
+    vk_layer_extension_utils.cpp
+    vk_layer_table.cpp
+    vk_layer_utils.cpp
+    Generating Code...
+  Lib:
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\Lib.exe /OUT:"G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory.lib" /NOLOGO G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\vk_format_utils.obj
+    G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\vk_layer_config.obj
+    G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\vk_layer_extension_utils.obj
+    G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\vk_layer_table.obj
+    G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\vk_layer_utils.obj
+    layer_Factory.vcxproj -> G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory.lib
+  CopyFilesToOutputDirectory:
+    Copying file from "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\layer_factory.pdb" to "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory.pdb".
+  FinalizeBuildStatus:
+    Deleting file "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\layer_factory.tlog\unsuccessfulbuild".
+    Touching "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\Win32\Debug\layer_factory\layer_factory.tlog\layer_factory.lastbuildstate".
+  Done Building Project "G:\VulkanSDK\1.1.70.1\LayerFactory\Project\layer_Factory.vcxproj" (default targets).
+  
+  Build succeeded.
+      0 Warning(s)
+      0 Error(s)
+  
+  Time Elapsed 00:00:04.24
+  layer_factory.cpp
+  layer.cpp
+  Generating Code...
+     Creating library C:\dev\fcat\Win32\Debug\VkLayer_fcat.lib and object C:\dev\fcat\Win32\Debug\VkLayer_fcat.exp
+  fcat.vcxproj -> C:\dev\fcat\Win32\Debug\VkLayer_fcat.dll
+  C:\dev\fcat\fcat\VkLayer_fcat.json
+  1 File(s) copied

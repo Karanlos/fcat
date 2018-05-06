@@ -1,0 +1,31 @@
+#version 450
+
+layout(local_size_x = 16, local_size_y = 16) in;
+layout(binding = 0, set = 0, rgba8) uniform writeonly image2D destTex;
+
+layout(push_constant) uniform Index {
+	uint index;
+} index;
+
+vec4 clearColors[] = vec4[16](
+    vec4( 1.0,          0.1,        1.0, 		1.0 ), //1. White
+    vec4( 0.0,          1.0,        0.0,  		1.0 ), //2. Lime
+    vec4( 0.0,          0.0,        1.0,  		1.0 ), //3. Blue
+    vec4( 1.0,          0.0,        0.0,  		1.0 ), //4. Red
+    vec4( 0.0,          0.5,        0.5,  		1.0 ), //5. Teal
+    vec4( 0.0,          0.0,        0.5,  		1.0 ), //6. Navy
+    vec4( 0.0,          0.5,        0.0,  		1.0 ), //7. Green
+    vec4( 0.0,          1.0,        1.0,  		1.0 ), //8. Aqua
+    vec4( 0.0,          0.2,        0.13,		1.0 ), //9. Dark Green
+    vec4( 0.75,         0.75,       0.75,		1.0 ), //10. Silver
+    vec4( 0.5,          0.0,        0.5,  		1.0 ), //11. Purple
+    vec4( 0.5,          0.5,        0.0,  		1.0 ), //12. Olive
+    vec4( 0.5,          0.5,        0.5,  		1.0 ), //13. Gray
+    vec4( 1.0,          0.0,        1.0,  		1.0 ), //14. Fuchsia
+    vec4( 1.0,          1.0,        0.0,  		1.0 ), //15. Yellow
+    vec4( 1.0,          0.65,       0.0,  		1.0 )  //16. Orange
+);
+
+void main() {
+	imageStore(destTex, ivec2(gl_GlobalInvocationID.xy), clearColors[index.index]);
+}
